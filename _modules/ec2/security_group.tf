@@ -15,7 +15,7 @@ resource "aws_security_group" "sg_ec2" {
     from_port        = 80
     to_port          = 80
     protocol         = "tcp"
-    cidr_blocks      = [var.cfg.vpc.cidr ]
+    cidr_blocks      = [var.cfg.vpc.cidr]
     ipv6_cidr_blocks = ["::/0"]
   }
 

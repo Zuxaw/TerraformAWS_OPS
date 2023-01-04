@@ -22,7 +22,7 @@ resource "aws_instance" "development_webserver" {
     INSTANCE_ID=$(curl -s http://169.254.169.254/latest/meta-data/instance-id)
 
     # Print the instance ID to the website
-    echo "Instance ID: $INSTANCE_ID" > /var/www/html/index.html
+    echo "cc" > /var/www/html/index.html
     EOF
 
 }
