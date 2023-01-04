@@ -6,6 +6,6 @@ resource "aws_subnet" "private_subnets" {
 
   # TODO tags
   tags = {
-    Name = "public_subnet"
+    Name = "private_subnet"
   }
 }
