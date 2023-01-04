@@ -10,4 +10,11 @@ terraform {
 provider "aws" {
   shared_credentials_file = "./aws/credentials"
   region     = "us-east-1"
+
+  default_tags {
+    tags = {
+      Environment = "Staging"
+      Owner       = "Ops"
+    }
+}
 }
