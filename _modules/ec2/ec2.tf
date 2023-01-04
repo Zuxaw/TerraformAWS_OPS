@@ -1,12 +1,14 @@
-resource "aws_instance" "development_webserver" {
+resource "aws_instance" "staging_webserver" {
+    count = length(var.private_subnets_ids)
+
 
     subnet_id = var.public_subnets_ids[0]
 
     ami           = "ami-0b5eea76982371e91"
     instance_type = "t2.micro"
-    associate_public_ip_address = true
+    associate_public_ip_address = false
 
-    vpc_security_group_ids = [aws_security_group.sg_ec2.id]
+    vpc_security_group_ids = [aws_security_group.private.id]
 
     tags = {
         Name = "webserver_${var.cfg.env}"
