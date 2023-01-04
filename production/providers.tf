@@ -15,5 +15,5 @@ provider "aws" {
       Environment = "Production"
       Owner       = "Ops"
     }
-}
+  }
 }

@@ -3,6 +3,6 @@ resource "aws_vpc" "vpc_main" {
 
   # TODO tags
   tags = {
-    Name = "vpc_main"
+    Name = "vpc_main_${var.cfg.env}"
   }
 }

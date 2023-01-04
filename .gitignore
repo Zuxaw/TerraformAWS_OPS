@@ -9,3 +9,5 @@ staging/.terraform.lock.hcl
 development/terraform.tfstate.d/*
 production/terraform.tfstate.d/*
 staging/terraform.tfstate.d/*
+
+aws/credentials
