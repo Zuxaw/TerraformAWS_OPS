@@ -5,19 +5,21 @@
 - staging
 - production
 
-Project skeleton
-- _modules o ec2 o vpc
-o ec2-ha
-o ec2-asg
-o lambda
-o monitoring
-- config
-o development.yml
-o staging.yml
-o production.yml
-- development
-o main.tf
-o providers.tf
+## Project skeleton
+### _modules 
+- ec2
+- vpc
+- ec2-ha
+- ec2-asg
+- lambda
+- monitoring
+### config
+- development.yml
+- staging.yml
+- production.yml
+### development 
+- main.tf
+- providers.tf
 - staging
 - production
 
