@@ -1,0 +1,11 @@
+development/.terraform/*
+production/.terraform/*
+staging/.terraform/*
+
+development/.terraform.lock.hcl
+production/.terraform.lock.hcl
+staging/.terraform.lock.hcl
+
+development/terraform.tfstate.d/*
+production/terraform.tfstate.d/*
+staging/terraform.tfstate.d/*
