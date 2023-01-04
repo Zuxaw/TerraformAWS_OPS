@@ -1,7 +1,6 @@
 resource "aws_instance" "staging_webserver" {
     count = length(var.private_subnets_ids)
-
-
+    
     subnet_id = var.public_subnets_ids[0]
 
     ami           = "ami-0b5eea76982371e91"
