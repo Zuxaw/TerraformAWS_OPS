@@ -1,1 +1,4 @@
 # TerraformAWS_OPS
+
+-PERONA MAXIME
+-CASCIO JOSEPH
