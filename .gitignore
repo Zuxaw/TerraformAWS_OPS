@@ -12,4 +12,7 @@ staging/terraform.tfstate.d/*
 
 aws/credentials
 
+development/terraform.tfstate
+development/terraform.tfstate.backup
+
 
