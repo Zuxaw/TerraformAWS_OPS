@@ -9,20 +9,20 @@ resource "aws_internet_gateway" "main" {
   }
 }
 
-#####################
-#### NAT Gateway ####
-#####################
-resource "aws_eip" "nat" {
-  vpc = true
-}
+# #####################
+# #### NAT Gateway ####
+# #####################
+# resource "aws_eip" "nat" {
+#   vpc = true
+# }
 
-resource "aws_nat_gateway" "main" {
+# resource "aws_nat_gateway" "main" {
 
-  allocation_id = aws_eip.nat.id
-  subnet_id     = aws_subnet.public_subnets[0].id # arbitrary selected
+#   allocation_id = aws_eip.nat.id
+#   subnet_id     = aws_subnet.public_subnets[0].id # arbitrary selected
 
-  tags = {
-    Name = "Demo NAT-Gateway"
-  }
+#   tags = {
+#     Name = "Demo NAT-Gateway"
+#   }
 
-}
+# }

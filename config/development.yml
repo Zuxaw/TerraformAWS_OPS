@@ -1,12 +1,12 @@
 
 vpc:
   cidr: 10.0.0.0/24
-  azs: ["us-east-1a"]
+  subnets_azs: ["us-east-1a"]
   subnets:
     public:
       cidrs: ["10.0.0.0/26"]
     private:
-      cidrs: ["10.0.0.1/26"]
+      cidrs: ["10.0.0.64/26"]
   deploy_nat_gw: false
 
 

@@ -1,8 +1,8 @@
-resource "aws_vpc" "main_vpc" {
+resource "aws_vpc" "vpc_main" {
   cidr_block = var.cfg.vpc.cidr
 
   # TODO tags
   tags = {
-    Name = "main_vpc"
+    Name = "vpc_main"
   }
 }
