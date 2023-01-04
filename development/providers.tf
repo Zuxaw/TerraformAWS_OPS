@@ -13,7 +13,7 @@ provider "aws" {
 
   default_tags {
     tags = {
-      Environment = "Staging"
+      Environment = "Development"
       Owner       = "Ops"
     }
 }
