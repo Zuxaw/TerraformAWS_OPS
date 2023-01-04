@@ -4,9 +4,13 @@ resource "aws_instance" "development_webserver" {
 
     ami           = "ami-0b0dcb5067f052a63"
     instance_type = "t2.micro"
-    associate_public_ip_address = false
+    associate_public_ip_address = true
 
-    vpc_security_group_ids = [aws_security_group.public.id]
+    vpc_security_group_ids = [aws_security_group.sg_ec2.id]
+
+    tags = {
+        Name = "development_webserver"
+    }
 
     user_data = <<EOF
     #!/bin/bash
