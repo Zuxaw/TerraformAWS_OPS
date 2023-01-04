@@ -5,7 +5,7 @@ lambda:
 
 vpc:
   cidr: 10.0.10.0/24
-  subnets_azs: ["us-east-1a"]
+  subnets_azs: ["us-east-1a", "us-east-1b"]
   subnets:
     public:
       cidrs: ["10.0.10.0/26", "10.0.10.128/26"]

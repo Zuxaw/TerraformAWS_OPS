@@ -1,3 +1,3 @@
 output public_ip {
-  value       = aws_lb.alb.ip
+  value = var.nat_ip_address
 }

@@ -1,13 +1,15 @@
 output vpc_id {
-  value       = aws_vpc.vpc_main.id
+  value = aws_vpc.vpc_main.id
 }
 
 output private_subnets_ids {
-    value = aws_subnet.private_subnets[*].id
+  value = aws_subnet.private_subnets[*].id
 }
 
 output public_subnets_ids {
-    value = aws_subnet.public_subnets[*].id
+  value = aws_subnet.public_subnets[*].id
 }
 
-# TODO edit this
+output nat_ip_address {
+  value = aws_nat_gateway.main[0].public_ip
+}

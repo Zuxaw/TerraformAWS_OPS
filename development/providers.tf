@@ -13,8 +13,9 @@ provider "aws" {
 
   default_tags {
     tags = {
-      Environment = "Development"
-      Owner       = "Ops"
+      environment = "Development"
+      owner       = "Ops"
+      project = "AWS Operations - Project"
     }
-}
+  }
 }

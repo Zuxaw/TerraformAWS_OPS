@@ -10,4 +10,8 @@ variable "private_subnets_ids" {
     type = list(string)
 }
 
+variable "nat_ip_address" {
+    type = string
+}
+
 variable cfg {}

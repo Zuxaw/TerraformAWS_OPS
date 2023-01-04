@@ -13,8 +13,9 @@ provider "aws" {
 
   default_tags {
     tags = {
-      Environment = "Staging"
-      Owner       = "Ops"
+      environment = "Staging"
+      owner       = "Ops"
+      project = "AWS Operations - Project"
     }
 }
 }
