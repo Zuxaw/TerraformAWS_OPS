@@ -1,3 +1,1 @@
-variable "subnets_azs" {
-    type = list(string)
-}
+variable cfg {}
