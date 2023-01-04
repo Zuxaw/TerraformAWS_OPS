@@ -17,11 +17,12 @@
 - development.yml
 - staging.yml
 - production.yml
-### development 
+### development staging 
 - main.tf
 - providers.tf
-- staging
-- production
+### development production
+- main.tf
+- providers.tf
 
 ## Etudiant
 
