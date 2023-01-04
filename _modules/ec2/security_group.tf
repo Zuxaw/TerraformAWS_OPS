@@ -12,11 +12,12 @@ resource "aws_security_group" "sg_ec2" {
   }
 
   egress {
-    from_port        = 80
-    to_port          = 80
-    protocol         = "tcp"
-    cidr_blocks      = [var.cfg.vpc.cidr]
-    ipv6_cidr_blocks = ["::/0"]
+    //all
+    description      = "ALL"
+    from_port        = 0
+    to_port          = 0
+    protocol         = "-1"
+    cidr_blocks      = ["0.0.0.0/0"]
   }
 
   tags = {
