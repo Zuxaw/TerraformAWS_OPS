@@ -7,7 +7,7 @@ resource "aws_instance" "webserver" {
     instance_type = "t2.micro"
     associate_public_ip_address = false
 
-    vpc_security_group_ids = [aws_security_group.private.id]
+    vpc_security_group_ids = [aws_security_group.sg_ec2.id]
 
     tags = {
         Name = "webserver_${var.cfg.env}"

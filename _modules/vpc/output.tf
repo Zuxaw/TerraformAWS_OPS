@@ -11,5 +11,5 @@ output public_subnets_ids {
 }
 
 output nat_ip_address {
-  value = aws_nat_gateway.main[0].public_ip
+  value = var.cfg.vpc.deploy_nat_gw ? aws_nat_gateway.main[0].public_ip : null
 }
