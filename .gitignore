@@ -14,3 +14,4 @@ aws/credentials
 
 development/terraform.tfstate
 development/terraform.tfstate.backup
+development/.terraform.tfstate.lock.info
