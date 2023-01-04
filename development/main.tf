@@ -11,4 +11,10 @@ module "ec2" {
     public_subnets_ids = module.vpc.public_subnets_ids
     cfg = local.cfg
 }
+
+module "lambda" {
+    source = "../_modules/lambda"
+    url = module.ec2.public_ip
+    cron_rate = 
+}
   
