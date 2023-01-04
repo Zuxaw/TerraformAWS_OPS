@@ -6,6 +6,6 @@ resource "aws_subnet" "private_subnets" {
 
   # TODO tags
   tags = {
-    Name = "private_subnet"
+    Name = "private_subnet_${var.cfg.env}"
   }
 }

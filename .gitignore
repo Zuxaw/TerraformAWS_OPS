@@ -10,4 +10,9 @@ development/terraform.tfstate.d/*
 production/terraform.tfstate.d/*
 staging/terraform.tfstate.d/*
 
-./aws/credentials
+aws/credentials
+
+development/terraform.tfstate
+development/terraform.tfstate.backup
+
+

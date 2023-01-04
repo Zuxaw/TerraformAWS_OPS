@@ -10,7 +10,7 @@ resource "aws_route_table" "public" {
   }
 
   tags = {
-    Name = "rt-public"
+    Name = "rt-public_${var.cfg.env}"
   }
 }
 

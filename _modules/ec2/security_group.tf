@@ -21,6 +21,6 @@ resource "aws_security_group" "sg_ec2" {
   }
 
   tags = {
-    Name = "sg_ec2"
+    Name = "sg_ec2_${var.cfg.env}"
   }
 }
