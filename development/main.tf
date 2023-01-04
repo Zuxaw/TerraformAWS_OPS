@@ -15,6 +15,7 @@ module "ec2" {
 module "lambda" {
     source = "../_modules/lambda"
     url = module.ec2.public_ip
-    cron_rate = 
+    cron_rate = local.cfg.lambda.cron_rate
+    cfg = local.cfg
 }
   

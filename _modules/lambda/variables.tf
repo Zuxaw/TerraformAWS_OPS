@@ -5,4 +5,7 @@ variable "url" {
 
 variable "cron_rate" {
     type = number
+    default = 5
 }
+
+variable cfg {}

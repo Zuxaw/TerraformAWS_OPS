@@ -9,7 +9,7 @@ resource "aws_instance" "development_webserver" {
     vpc_security_group_ids = [aws_security_group.sg_ec2.id]
 
     tags = {
-        Name = "development_webserver_${var.cfg.env}"
+        Name = "webserver_${var.cfg.env}"
     }
 
     user_data = <<EOF

@@ -14,5 +14,3 @@ aws/credentials
 
 development/terraform.tfstate
 development/terraform.tfstate.backup
-
-
