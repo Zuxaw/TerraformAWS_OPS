@@ -21,10 +21,10 @@ resource "aws_lb_target_group" "front_end" {
 }
 
 resource "aws_lb_target_group_attachment" "instances" {
-  count = length(aws_instance.private_instances)
+  count = length(aws_instance.webserver)
   
   target_group_arn = aws_lb_target_group.front_end.arn
-  target_id        = aws_instance.private_instances[count.index].id
+  target_id        = aws_instance.webserver[count.index].id
   port             = 80
 }
 

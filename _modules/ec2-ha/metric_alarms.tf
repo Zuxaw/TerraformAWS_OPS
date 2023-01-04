@@ -1,6 +1,6 @@
 resource "aws_cloudwatch_metric_alarm" "ec2_cpu_utilization" {
-  count = length(var.private_instances_ids)
-  alarm_name          = "ec2-high-cpu-utilization-for-instance-${var.private_instances_ids[count.index]}"
+  count = length(aws_instance.webserver)
+  alarm_name          = "ec2-high-cpu-utilization-for-instance-${aws_instance.webserver[count.index].id}"
   comparison_operator = "GreaterThanThreshold"
   evaluation_periods  = "2"
   metric_name         = "CPUUtilization"
@@ -10,6 +10,6 @@ resource "aws_cloudwatch_metric_alarm" "ec2_cpu_utilization" {
   threshold           = "80"
 
   dimensions = {
-    InstanceId = "${var.private_instances_ids[count.index]}"
+    InstanceId = "${aws_instance.webserver[count.index].id}"
   }
 }

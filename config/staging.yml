@@ -4,13 +4,13 @@ lambda:
   cron_rate: 10
 
 vpc:
-  cidr: 10.0.0.0/24
+  cidr: 10.0.10.0/24
   subnets_azs: ["us-east-1a"]
   subnets:
     public:
-      cidrs: ["10.0.0.0/26", "10.0.0.128/26"]
+      cidrs: ["10.0.10.0/26", "10.0.10.128/26"]
     private:
-      cidrs: ["10.0.0.64/26", "10.0.0.192/26"]
+      cidrs: ["10.0.10.64/26", "10.0.10.192/26"]
   deploy_nat_gw: true
 
 

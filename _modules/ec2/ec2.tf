@@ -1,7 +1,7 @@
-resource "aws_instance" "staging_webserver" {
-    count = length(var.private_subnets_ids)
+resource "aws_instance" "webserver" {
+    count = length(var.public_subnets_ids)
 
-    subnet_id = var.private_subnets_ids[count.index]
+    subnet_id = var.public_subnets_ids[count.index]
 
     ami           = "ami-0b5eea76982371e91"
     instance_type = "t2.micro"

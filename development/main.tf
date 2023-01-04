@@ -18,4 +18,3 @@ module "lambda" {
     cron_rate = local.cfg.lambda.cron_rate
     cfg = local.cfg
 }
-  

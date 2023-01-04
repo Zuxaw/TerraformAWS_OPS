@@ -14,7 +14,7 @@ resource "aws_cloudwatch_dashboard" "main" {
                 "metrics": [
                     ${join(
                         ",\n",
-                        [for id in var.private_instances_ids : "[\"AWS/EC2\", \"CPUUtilization\", \"InstanceId\", \"${id}\"]"]
+                        [for id in aws_instance.webserver[*].id : "[\"AWS/EC2\", \"CPUUtilization\", \"InstanceId\", \"${id}\"]"]
                     )}
                 ],
                 "period": 300,
