@@ -2,6 +2,14 @@ development/.terraform/*
 production/.terraform/*
 staging/.terraform/*
 
+development/.terraform/terraform.tfstate
+production/.terraform/terraform.tfstate
+staging/.terraform/terraform.tfstate
+
+development/.terraform/terraform.tfstate.backup
+production/.terraform/terraform.tfstate.backup
+staging/.terraform/terraform.tfstate.backup
+
 development/.terraform.lock.hcl
 production/.terraform.lock.hcl
 staging/.terraform.lock.hcl
