@@ -12,9 +12,9 @@ resource "aws_internet_gateway" "main" {
 # #####################
 # #### NAT Gateway ####
 # #####################
-# resource "aws_eip" "nat" {
-#   vpc = true
-# }
+resource "aws_eip" "nat" {
+  vpc = true
+}
 
 # resource "aws_nat_gateway" "main" {
 
@@ -22,7 +22,7 @@ resource "aws_internet_gateway" "main" {
 #   subnet_id     = aws_subnet.public_subnets[0].id # arbitrary selected
 
 #   tags = {
-#     Name = "Demo NAT-Gateway"
+#     Name = "NAT-Gateway"
 #   }
 
 # }

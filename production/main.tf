@@ -3,3 +3,4 @@ module vpc {
     source = "../_modules/vpc"
     cfg = local.cfg
 }
+
